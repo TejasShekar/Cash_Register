@@ -10,7 +10,8 @@ checkBtn.addEventListener("click", validate);
 function validate() {
   errorMsg.style.display = "none";
   if (billAmount.value > 0) {
-    amountToBeReturned = cashGiven.value - billAmount.value;
+    const amountToBeReturned = cashGiven.value - billAmount.value;
+    console.log(amountToBeReturned)
     calcAmount(amountToBeReturned);
   } else {
     errorMsg.style.display = "block";
@@ -20,7 +21,7 @@ function validate() {
 
 function calcAmount(amountToBeReturned) {
   for(let i=0; i<notes.length; i++){
-    noOfNotes[i].innerHTML = amountToBeReturned / notes[i];
+    noOfNotes[i].innerHTML = Math.floor(amountToBeReturned / notes[i]);
     amountToBeReturned %= notes[i];
   }
 }
