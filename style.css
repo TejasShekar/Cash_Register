@@ -62,10 +62,10 @@ body {
 }
 
 #error-msg {
-  display: block;
   background-color: var(--primary-color);
   font-size: larger;
   margin: 1rem 0 0;
+  padding: 0.5rem 0rem;
 }
 
 .notes-table {

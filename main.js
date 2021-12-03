@@ -17,6 +17,7 @@ checkBtn.addEventListener("click", validate);
 
 function proceed() {
   if (billAmount.value > 0) {
+    hideMessage();
     cashGivenText.style.display = "block";
     cashGiven.style.display = "initial";
     checkBtn.style.display = "block";
