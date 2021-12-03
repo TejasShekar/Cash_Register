@@ -30,6 +30,8 @@ body {
 }
 
 .input-label {
+  margin-top: 1rem;
+  display: block;
   font-size: large;
   font-weight: 600;
 }
@@ -38,14 +40,15 @@ body {
   font-size: 14px;
   outline: #fff;
   padding: 0.6rem 1rem;
-  margin: 1rem;
+  margin: 1rem auto 0rem;
   border: 2px solid var(--primary-color);
   border-radius: 0.5rem;
   width: 100%;
   max-width: 258px;
 }
 
-#check-btn {
+#check-btn,
+#next-btn {
   background: var(--primary-color);
   border: none;
   color: #fff;
@@ -54,7 +57,7 @@ body {
   font-size: large;
   cursor: pointer;
   outline: #fff;
-  margin: auto;
+  margin: 1rem auto;
   display: block;
 }
 
@@ -83,4 +86,14 @@ td {
   width: 0%;
   border-collapse: collapse;
   padding: 0.4rem;
+}
+
+footer {
+  text-align: center;
+  padding: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
