@@ -2,49 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cash Register App</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style.css"/>
   </head>
   <body>
     <main class="container">
-      <h1>Cash Register Manager</h1>
-      <p>
-        Enter the bill amount and cash given by the customer and know minimum number of notes to return.
+      <h1 class="heading">Cash Register Manager</h1>
+      <p class="description">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
       </p>
-      <label for="bill-amount" class="input">Bill Amount</label>
-      <input id="bill-amount" type="number">
-      <label for="cash-given" class="input">Cash Given</label>
-      <input id="cash-given" type="number">
+      <label for="bill-amount" class="input-label">Bill Amount</label>
+      <input class="input" id="bill-amount" type="number"/>
+      <label for="cash-given" class="input-label">Cash Given</label>
+      <input class="input" id="cash-given" type="number"/>
       <button id="check-btn">Check</button>
       <p id="error-msg"></p>
-      <table>
-        <caption>Amount to be returned</caption>
+      <table class="notes-table">
+        <caption>
+          Amount to be returned
+        </caption>
         <tbody>
-            <tr>
-                <th>No of Notes</th>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-                <td class="no-of-notes"></td>
-            </tr>
-            <tr>
-                <th>Note Value</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr> 
+          <tr>
+            <th>No of Notes</th>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Note Value</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>100</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
         </tbody>
       </table>
     </main>
+    <footer>
+        Made by
+        <a href="https://portfolio-of-tejas.netlify.app" target="_blank">TejasxShekar</a>
+      </footer>
     <script src="/main.js" type="text/javascript"></script>
   </body>
 </html>
