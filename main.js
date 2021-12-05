@@ -14,7 +14,6 @@ checkBtn.style.display = "none";
 nextBtn.addEventListener("click", proceed);
 checkBtn.addEventListener("click", validate);
 
-
 function proceed() {
   if (Number(billAmount.value) > 0) {
     hideMessage();
@@ -33,7 +32,8 @@ function validate() {
     cashGivenText.style.display = "block";
     cashGiven.style.display = "initial";
     if (Number(cashGiven.value) > Number(billAmount.value)) {
-      const amountToBeReturned = Number(cashGiven.value) - Number(billAmount.value);
+      const amountToBeReturned =
+        Number(cashGiven.value) - Number(billAmount.value);
       console.log(amountToBeReturned);
       calcAmount(amountToBeReturned);
     } else if (Number(cashGiven.value) == 0) {
@@ -54,7 +54,7 @@ function validate() {
 
 function calcAmount(amountToBeReturned) {
   for (let i = 0; i < notes.length; i++) {
-    noOfNotes[i].innerHTML = Math.floor(amountToBeReturned / notes[i]);
+    noOfNotes[i].innerText = Math.floor(amountToBeReturned / notes[i]);
     amountToBeReturned %= notes[i];
   }
 }
